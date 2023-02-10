@@ -1,0 +1,51 @@
+.experience {
+    padding: 2rem;
+}
+
+.experience__section {
+    max-width: 65%;
+    margin: auto;
+}
+
+.experience__wrapper {
+    text-align: start;
+}
+
+.experience__wrapper > p {
+    margin: 0 0 0.5rem;
+}
+
+.experience__icon {
+    margin: auto 1rem;
+}
+
+.experience__company {
+    font-size: 1.1rem;
+}
+
+.experience__position {
+    font-size: 1.25rem;
+}
+
+.experience__description, .experience__year {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+    .experience__section {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .experience__section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .experience__section > .card {
+        flex-direction: column !important;
+        align-items: baseline;
+    }
+}

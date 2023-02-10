@@ -1,0 +1,20 @@
+.footer {
+    font-family: cursive;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0;
+    padding: 2rem;
+    background-color: var(--bg-white);
+    color: var(--bg-white-text);
+}
+
+.footer > p {
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 601px) {
+    .footer {
+        flex-direction: column !important;
+        align-items: center;
+    }
+}

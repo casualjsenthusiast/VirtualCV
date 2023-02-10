@@ -1,0 +1,21 @@
+.professional-skills {
+    padding: 2em;
+}
+
+.professional-skills__section {
+  max-width: 80%;
+  margin: auto;
+}
+
+.professional-skills__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 601px) {
+    .professional-skills__wrapper {
+        grid-template-columns: auto;
+    }
+}

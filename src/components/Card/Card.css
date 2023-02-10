@@ -1,0 +1,10 @@
+.card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background-color: var(--bg-white);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(128, 149, 182, 0.15) 0px 4px 75px 0px;
+  border-radius: 10px;
+}

@@ -1,0 +1,61 @@
+.navbar {
+  background-color: var(--bg-white);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(128, 149, 182, 0.15) 0px 4px 75px 0px;
+  padding: 1em 2em;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 1rem;
+  z-index: 50;
+}
+
+.hamburger-div {
+  margin: 0 auto 0 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar__links {
+    color: var(--bg-white-text);
+}
+
+.navbar > a:hover {
+    color: var(--bg-white-icons-color);
+}
+
+.navbar__links_flex {
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1096px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+
+    .navbar__candidate-name {
+        display: inline;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger > button {
+        background: transparent;
+        border: none;
+    }
+
+    .hamburger-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar__links_flex {
+        flex-direction: column !important;
+        display: none !important;
+    }
+}

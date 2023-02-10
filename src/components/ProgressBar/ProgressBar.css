@@ -1,0 +1,12 @@
+.progress-bar__outer {
+  width: 100%;
+  height: 8px;
+  background-color: var(--progress-bar-outer);
+  border-radius: 200px;
+}
+
+.progress-bar__inner {
+  height: 8px;
+  background-color: var(--bg-white-icons-color);
+  border-radius: 200px;
+}

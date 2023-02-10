@@ -1,0 +1,52 @@
+.education {
+  background-color: var(--section-bg-blue);
+  padding: 2rem;
+}
+
+.education__section {
+  max-width: 65%;
+  margin: auto;
+}
+
+.education__icon {
+  margin: auto 1rem;
+}
+
+.education__wrapper {
+  text-align: start;
+}
+
+.education__wrapper > p {
+  margin: 0 0 0.5rem;
+}
+
+.education__uni {
+  font-size: 1.1rem;
+}
+
+.education__degree {
+  font-size: 1.25rem;
+}
+
+.education__year {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+  .education__section {
+      max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+    .education__section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+  .education__section > .card {
+      flex-direction: column !important;
+      align-items: baseline;
+  }
+}

@@ -1,0 +1,36 @@
+.accomplishments {
+  background-color: var(--bg-floral-white);
+  padding: 2em;
+}
+
+.accomplishments__section {
+  max-width: 50%;
+  margin: auto;
+}
+
+.accomplishments__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.accomplishments__para {
+  text-align: start;
+}
+
+.accomplishments__para > p {
+  margin: 0 0 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .accomplishments__section {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .accomplishments__section {
+    max-width: 90%;
+  }
+}
