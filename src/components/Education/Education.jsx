@@ -11,7 +11,7 @@ const Education = () => {
           return (
             <Card key={ed.id} className="frow">
               <div className="education__icon fw-700">
-                <img src="src/assets/education.svg" alt="education and certification icon" />
+                <img src="assets/education.svg" alt="education and certification icon" />
               </div>
               <div className="education__wrapper">
                 <p className="education__uni fw-700">

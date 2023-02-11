@@ -8,7 +8,7 @@ const AboutMe = () => {
       <section className="about-me__info text-center">
         <Card className="fcol">
           <div className="about-me__info__profile-pic">
-            <img alt="profile-pic" src="src/assets/profilepic.svg" />
+            <img alt="profile-pic" src="assets/profilepic.svg" />
           </div>
           <div className="about-me__info__intro">
             Hello,

@@ -11,7 +11,7 @@ const Experience = () => {
           return (
             <Card key={experience.id} className="frow">
               <div className="experience__icon fw-700">
-                <img src="src/assets/work-icon.svg" alt="work icon" />
+                <img src="assets/work-icon.svg" alt="work icon" />
               </div>
               <div className="experience__wrapper">
                 <p className="experience__company fw-700">
