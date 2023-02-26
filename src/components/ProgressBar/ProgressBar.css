@@ -9,4 +9,11 @@
   height: 8px;
   background-color: var(--bg-white-icons-color);
   border-radius: 200px;
+  animation: progress 5s infinite alternate;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
 }

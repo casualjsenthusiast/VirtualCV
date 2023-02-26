@@ -18,6 +18,7 @@
   border-radius: 9999px;
   background-color: var(--bg-white-icons-color);
   padding: 3px;
+  transition: transform 0.3s ease;
 }
 
 .about-me__info__profile-pic > img {
@@ -25,6 +26,10 @@
   height: 200px;
   border-radius: 9999px;
   object-fit: cover;
+}
+
+.about-me__info__profile-pic:hover {
+  transform: scale(1.1);
 }
 
 .about-me__info__intro {
