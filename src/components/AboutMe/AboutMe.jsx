@@ -1,7 +1,11 @@
+import { ThemeContext } from "../../App";
+import { useContext } from "react";
+
 import "./AboutMe.css";
 import Card from "../Card/Card";
 
 const AboutMe = () => {
+  const themeContext = useContext(ThemeContext);
   return (
     <div id="aboutMe" className="about-me">
       <section className="bg-cover w-full h-580"></section>
@@ -13,13 +17,13 @@ const AboutMe = () => {
           <div className="about-me__info__intro">
             Hello,
             <span> I'm </span>
-            <span className="special-font">{import.meta.env.VITE_USER_FIRST_NAME}</span>
+            <span className="special-font">
+              {import.meta.env.VITE_USER_FIRST_NAME}
+            </span>
             <p>{import.meta.env.VITE_USER_DESIGNATION}</p>
           </div>
           <div className="about-me__info__headline">
-            <p>
-              {import.meta.env.VITE_USER_HEADLINE}
-            </p>
+            <p>{import.meta.env.VITE_USER_HEADLINE}</p>
           </div>
           <div className="about-me__info__socials">
             <div className="email">
@@ -34,13 +38,16 @@ const AboutMe = () => {
                 href={import.meta.env.VITE_USER_LINKEDIN}
                 target="_blank"
                 className="socials-link socials-handle"
+                style={{ color: themeContext.theme.theme.text }}
               >
                 LinkedIn
               </a>
             </div>
             <div className="location">
               <span className="socials-icon fa fa-map-marker"></span>
-              <span className="socials-handle">{import.meta.env.VITE_USER_LOCATION}</span>
+              <span className="socials-handle">
+                {import.meta.env.VITE_USER_LOCATION}
+              </span>
             </div>
           </div>
         </Card>

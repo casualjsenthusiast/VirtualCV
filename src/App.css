@@ -8,3 +8,8 @@
   width: 100%;
   z-index: 9999;
 }
+
+.main-content {
+  color: var(--bg-white-text);
+  transition: background 2s ease;
+}

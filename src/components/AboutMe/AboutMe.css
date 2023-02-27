@@ -29,6 +29,8 @@
 }
 
 .about-me__info__profile-pic:hover {
+  opacity: 75%;
+  transition: opacity 1s;
   transform: scale(1.1);
 }
 
@@ -62,11 +64,6 @@
 
 .socials-link {
   text-decoration: none;
-  color: var(--bg-white-text);
-}
-
-.socials-link:hover {
-  color: var(--bg-white-icons-color);
 }
 
 .socials-handle {

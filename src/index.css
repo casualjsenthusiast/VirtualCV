@@ -47,9 +47,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.6;
-
-  background-color: var(--bg-white);
-  color: var(--bg-white-text);
 }
 
 h1 {

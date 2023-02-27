@@ -1,7 +1,5 @@
 .interests {
   padding: 2rem;
-  background-color: var(--bg-grey-tundora);
-  color: var(--bg-white);
 }
 
 .interests__section {
@@ -12,7 +10,6 @@
 .interests__flex_div {
     gap: 1rem;
     justify-content: center;
-    color: var(--bg-white-text);
 }
 
 .interest__card {

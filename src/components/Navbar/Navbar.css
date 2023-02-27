@@ -6,6 +6,7 @@
   align-items: baseline;
   gap: 1rem;
   z-index: 50;
+  transition: background 2s ease;
 }
 
 .hamburger-div {

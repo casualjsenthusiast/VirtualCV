@@ -4,8 +4,6 @@
     justify-content: space-between;
     margin: 0 auto 0;
     padding: 2rem;
-    background-color: var(--bg-white);
-    color: var(--bg-white-text);
 }
 
 .footer > p {
