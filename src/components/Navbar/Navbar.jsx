@@ -1,8 +1,13 @@
+import { useState, useContext } from "react";
+import { ThemeContext, themes } from "../../App";
 import "./Navbar.css";
-import { useState } from "react";
 
 const Navbar = () => {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
+  const themeContext = useContext(ThemeContext);
+
+  const isLightMode = themes.light === themeContext.theme.theme;
+
   const links = [
     {
       id: "ercc4",
@@ -42,7 +47,7 @@ const Navbar = () => {
     const navbarLinks = document.querySelectorAll(".navbar__links");
     for (let link of navbarLinks) {
       if (link.id !== activeLinkId) {
-        link.style.color = style.getPropertyValue("--bg-white-text");
+        link.style.color = themeContext.theme.theme.text;
       }
     }
     event.target.style.color = style.getPropertyValue("--bg-white-icons-color");
@@ -62,13 +67,28 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar frow w-100">
+    <div
+      className="navbar frow w-100"
+      style={{
+        backgroundColor: themeContext.theme.theme.background,
+        color: themeContext.theme.theme.text,
+      }}
+    >
       <div className="hamburger-div">
         <div>
           <p className="navbar__candidate-name fw-700">
             {import.meta.env.VITE_USER_FIRST_NAME +
               " " +
               import.meta.env.VITE_USER_LAST_NAME}
+            &nbsp;
+            <span
+              title={`${
+                isLightMode ? "Switch to Dark Mode" : "Switch to Light Mode"
+              }`}
+              style={{ cursor: "pointer" }}
+              onClick={themeContext.toggleTheme}
+              className={`${isLightMode ? "fa fa-moon-o" : "fa fa-sun-o"}`}
+            ></span>
           </p>
         </div>
         <div className="hamburger">
@@ -98,6 +118,7 @@ const Navbar = () => {
               key={link.id}
               href={`#${link.sectionId}`}
               onClick={navLinkClickedHandler}
+              style={{ color: themeContext.theme.theme.text }}
             >
               {link.sectionName}
             </a>
